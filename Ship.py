@@ -6,6 +6,7 @@ class Ship:
         self._Cp = None
         self._B = None
         self._disp = None
+        self.parts = OrderedDict()
 
     def set__Lwl(self, Lwl):
         self._Lwl = Lwl

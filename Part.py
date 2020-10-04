@@ -51,9 +51,9 @@ class Hull(Part):
 
 
 class Appendage(Part):
-    def __init__(self, name):
+    def __init__(self, name, **kwargs):
         Part.__init__(self)
-        self.S = 0.0
+        # self.S = compute_area()
         self.set_name(name)
         self._form_factor = form_factors[self.get_name()]
 
